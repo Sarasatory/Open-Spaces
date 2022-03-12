@@ -2,18 +2,13 @@
   height: 100vh;
   padding: 0 24rem;
 
+  display: flex;
+  justify-content: center;
+
   background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-
-  @media (min-width: $break_point_tablet) {
-    display: flex;
-    align-items: flex-start;
-  }
-  @media (min-width: $break_point_desktop) {
-    justify-content: center;
-  }
 
   &__container {
     width: 100%;
@@ -23,6 +18,7 @@
     align-items: center;
 
     @media (min-width: $break_point_tablet) {
+      width: 80%;
       align-items: flex-start;
     }
     @media (min-width: $break_point_desktop) {
@@ -31,48 +27,13 @@
 
     &__title {
       margin: 215rem 0 24rem 0;
-      font-size: 24rem;
-      font-weight: $semi_bold;
-      color: $col_dark_green;
-      line-height: 38rem;
-
       @media (min-width: $break_point_tablet) {
         width: 430rem;
-        margin: 364rem 0 12rem 147rem;
-
-        font-size: 36rem;
-        line-height: 56rem;
+        margin: 364rem 0 12rem 0;
       }
       @media (min-width: $break_point_desktop) {
         margin: 400rem 0 12rem 0;
       }
-    }
-
-    &__button {
-      padding: 12rem 24rem;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-size: 16rem;
-      font-weight: $semi_bold;
-      line-height: 24rem;
-      text-transform: capitalize;
-      color: $col_white;
-
-      background-color: $col_dark_green;
-
-      @media (min-width: $break_point_tablet) {
-        margin-left: 147rem;
-      }
-      @media (min-width: $break_point_desktop) {
-        margin-left: 0;
-      }
-    }
-    &__button:hover {
-      cursor: pointer;
-      background-color: $col_dark_green_hover;
     }
   }
 }

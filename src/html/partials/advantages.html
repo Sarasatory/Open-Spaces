@@ -1,23 +1,30 @@
 <section class="advantages">
   <div class="advantages__container">
-    <h2 class="advantages__container__title">
+    <h2 class="advantages__container__title text_title_h2">
       Volverse organizado se siente mejor con
-      <span class="uppercase">Open Spaces</span>
+      <span class="uppercase text_title_h2">Open Spaces</span>
     </h2>
-    <article class="advantages__container__article">
-      <img src="./assets/images/icon_1.png" alt="Icon 1" />
-      <h3>Lo que necesitas</h3>
-      <p>Una línea de productos diseñados para tus espacios</p>
-    </article>
-    <article class="advantages__container__article">
-      <img src="./assets/images/icon_2.png" alt="Icon 2" />
-      <h3>Materias primas sustentables</h3>
-      <p>Todos los productos con materias primas sustentables</p>
-    </article>
-    <article class="advantages__container__article">
-      <img src="./assets/images/icon_3.png" alt="Icon 3" />
-      <h3>Guía</h3>
-      <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
-    </article>
+
+    <include
+      src="../partials/components/advantages-article.html"
+      aa_img="icon_1.png"
+      aa_alt_img="Icono 1"
+      aa_title="Lo que necesitas"
+      aa_paragraph="Una línea de productos diseñados para tus espacios"
+    ></include>
+    <include
+      src="../partials/components/advantages-article.html"
+      aa_img="icon_2.png"
+      aa_alt_img="Icono 2"
+      aa_title="Materias primas sustentables"
+      aa_paragraph="Todos los productos con materias primas sustentable"
+    ></include>
+    <include
+      src="../partials/components/advantages-article.html"
+      aa_img="icon_3.png"
+      aa_alt_img="Icono 3"
+      aa_title="Guía"
+      aa_paragraph="Soporte y asesoramiento para ayudarte con tu objetivo"
+    ></include>
   </div>
 </section>

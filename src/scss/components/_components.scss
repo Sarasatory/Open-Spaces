@@ -1,0 +1,31 @@
+.button {
+  padding: 12rem 24rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16rem;
+  font-weight: $semi_bold;
+  line-height: 24rem;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button--normal {
+  color: $col_white;
+  text-transform: capitalize;
+  background-color: $col_dark_green;
+}
+.button--normal:hover {
+  background-color: $col_dark_green_hover;
+}
+
+.button--ghost {
+  color: $col_white;
+  background-color: transparent;
+}
+.button--ghost:hover {
+  background-color: $col_orange_hover;
+}

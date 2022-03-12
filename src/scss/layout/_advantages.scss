@@ -1,15 +1,15 @@
 .advantages {
-  padding: 0 24rem;
+  padding: 48rem 48rem;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
 
+  color: $col_dark_green;
   background-color: $col_light_grey;
 
   &__container {
     width: 100%;
     max-width: $max-width-desktop;
-    padding: 40rem 45rem 40rem 45rem;
 
     display: grid;
     grid-template-rows: repeat(4, auto);
@@ -17,7 +17,7 @@
 
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break_point_tablet) {
       grid-template-rows: repeat(2, auto);
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 40rem;
@@ -25,18 +25,12 @@
     &__title,
     &__title span {
       text-align: center;
-      font-size: 24rem;
-      font-weight: $semi_bold;
-      line-height: 38rem;
-      color: $col_dark_green;
-      @media (min-width: 768px) {
+
+      @media (min-width: $break_point_tablet) {
         grid-column-start: span 3;
       }
-      @media (min-width: 1024px) {
-        font-size: 36rem;
-        line-height: 56rem;
-      }
     }
+
     &__title span {
       text-transform: uppercase;
     }
@@ -45,30 +39,16 @@
       width: 90rem;
       height: 90rem;
       margin: 0 0 45rem 0;
-      @media (min-width: 1024px) {
+      @media (min-width: $break_point_desktop) {
         width: 120rem;
         height: 120rem;
       }
     }
     &__article h3 {
       margin: 0 0 12rem 0;
-      font-size: 20rem;
-      font-weight: $semi_bold;
-      line-height: 24rem;
-      color: $col_dark_green;
-      @media (min-width: 768px) {
+      @media (min-width: $break_point_tablet) {
         grid-column-start: span 3;
       }
-      @media (min-width: 1024px) {
-        font-size: 24rem;
-        line-height: 30rem;
-      }
-    }
-    &__article p {
-      font-size: 16rem;
-      font-weight: $regular;
-      line-height: 20rem;
-      color: $col_dark_green;
     }
   }
 }

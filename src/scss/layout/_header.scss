@@ -16,7 +16,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: $col_dark_green;
 
     @media (min-width: $break_point_desktop) {
       max-width: $max-width-desktop;
@@ -44,11 +43,6 @@
       }
       & li {
         padding: 0 15rem;
-        font-size: 16rem;
-        font-weight: $regular;
-      }
-      & li:hover {
-        color: $col_dark_green_hover;
       }
     }
   }
