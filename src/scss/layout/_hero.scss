@@ -2,41 +2,48 @@
   height: 100vh;
   padding: 0 24rem;
 
-  display: flex;
-  justify-content: center;
-
   background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  @media all and (min-width: 768px) {
+
+  @media (min-width: $break_point_tablet) {
+    display: flex;
     align-items: flex-start;
+  }
+  @media (min-width: $break_point_desktop) {
+    justify-content: center;
   }
 
   &__container {
     width: 100%;
-    max-width: $max-width-desk;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media all and (min-width: 768px) {
+
+    @media (min-width: $break_point_tablet) {
       align-items: flex-start;
     }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-desktop;
+    }
+
     &__title {
       margin: 215rem 0 24rem 0;
       font-size: 24rem;
       font-weight: $semi_bold;
       color: $col_dark_green;
       line-height: 38rem;
-      @media all and (min-width: 768px) {
+
+      @media (min-width: $break_point_tablet) {
         width: 430rem;
         margin: 364rem 0 12rem 147rem;
 
         font-size: 36rem;
         line-height: 56rem;
       }
-      @media all and (min-width: 1024px) {
+      @media (min-width: $break_point_desktop) {
         margin: 400rem 0 12rem 0;
       }
     }
@@ -55,10 +62,11 @@
       color: $col_white;
 
       background-color: $col_dark_green;
-      @media all and (min-width: 768px) {
+
+      @media (min-width: $break_point_tablet) {
         margin-left: 147rem;
       }
-      @media all and (min-width: 1024px) {
+      @media (min-width: $break_point_desktop) {
         margin-left: 0;
       }
     }

@@ -8,7 +8,7 @@
 
   &__container {
     width: 100%;
-    max-width: $max-width-desk;
+    max-width: $max-width-desktop;
     padding: 40rem 45rem 40rem 45rem;
 
     display: grid;
@@ -17,7 +17,7 @@
 
     text-align: center;
 
-    @media all and (min-width: 768px) {
+    @media (min-width: 768px) {
       grid-template-rows: repeat(2, auto);
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 40rem;
@@ -29,10 +29,10 @@
       font-weight: $semi_bold;
       line-height: 38rem;
       color: $col_dark_green;
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         grid-column-start: span 3;
       }
-      @media all and (min-width: 1024px) {
+      @media (min-width: 1024px) {
         font-size: 36rem;
         line-height: 56rem;
       }
@@ -45,7 +45,7 @@
       width: 90rem;
       height: 90rem;
       margin: 0 0 45rem 0;
-      @media all and (min-width: 1024px) {
+      @media (min-width: 1024px) {
         width: 120rem;
         height: 120rem;
       }
@@ -56,10 +56,10 @@
       font-weight: $semi_bold;
       line-height: 24rem;
       color: $col_dark_green;
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         grid-column-start: span 3;
       }
-      @media all and (min-width: 1024px) {
+      @media (min-width: 1024px) {
         font-size: 24rem;
         line-height: 30rem;
       }

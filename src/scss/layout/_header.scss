@@ -2,11 +2,9 @@
   position: sticky;
   top: 0;
 
-  z-index: 10;
-
-  height: calc(96rem + 19rem);
-  padding: 19rem 32rem 0 32rem;
-  margin-bottom: calc(-96rem - 19rem);
+  height: calc(96rem + 20rem);
+  padding: 20rem 32rem 0 32rem;
+  margin-bottom: calc(-96rem - 20rem);
 
   display: flex;
   justify-content: center;
@@ -15,17 +13,21 @@
   &__nav {
     width: 100%;
     height: 96rem;
-    max-width: $max-width-desk;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: $col_dark_green;
+
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-desktop;
+    }
+
     &--hamburguer {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      @media all and (min-width: 1024px) {
+      @media (min-width: $break_point_desktop) {
         display: none;
       }
     }
@@ -35,7 +37,7 @@
 
     &--menu {
       display: none;
-      @media all and (min-width: 1024px) {
+      @media (min-width: $break_point_desktop) {
         margin-left: -15rem;
         display: flex;
         justify-content: flex-start;
@@ -52,11 +54,11 @@
   }
 
   &__logo {
-    width: 213rem;
+    width: 214rem;
     height: 96rem;
 
     position: absolute;
-    top: 19rem;
+    top: 20rem;
     left: calc(50vw - 107rem);
   }
 }
