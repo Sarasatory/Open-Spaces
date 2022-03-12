@@ -1,11 +1,10 @@
 @import "core/variables";
 @import "core/normalize";
 @import "core/reset";
+@import "components/components";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/advantages";
-
-body {
-  background-color: aliceblue;
-  //   position: relative;
-}
+@import "layout/shipping";
+@import "layout/buy";
+@import "layout/footer";

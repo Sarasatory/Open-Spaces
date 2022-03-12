@@ -1,0 +1,50 @@
+.buy {
+  display: grid;
+  grid-template-rows: 340rem 340rem;
+
+  background-color: $col_light_grey;
+
+  @media (min-width: $break_point_tablet) {
+    grid-template-rows: 340rem 475rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__top-left {
+    padding: 48rem 24rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    @media (min-width: $break_point_desktop) {
+      min-height: 450rem;
+      padding: 48rem 24rem 48rem 20%;
+
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &__title {
+      width: 80%;
+      margin-bottom: 12rem;
+    }
+
+    &__paragraph {
+      width: 80%;
+      margin-bottom: 24rem;
+    }
+  }
+
+  &__bottom-right {
+    background-image: url(../images/creando-espacios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}

@@ -9,7 +9,11 @@ $col_medium_grey: #b6c8c9;
 $col_dark_green: #0c474b;
 $col_dark_green_hover: #19b7c2;
 $col_orange: #ff975a;
+$col_orange_hover: #f7b96e;
 $col_white: #fff;
 
 // SIZES
-$max-width-desk: 1200rem;
+$break_point_tablet: 768px;
+$break_point_desktop: 1200px;
+
+$max-width-desktop: 1400rem;
