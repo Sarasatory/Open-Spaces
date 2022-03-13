@@ -12,12 +12,6 @@ body {
   line-height: 38rem;
   @media (min-width: $break_point_tablet) {
     font-size: 36rem;
-    font-weight: $semi_bold;
-    line-height: 56rem;
-  }
-  @media (min-width: $break_point_desktop) {
-    font-size: 36rem;
-    font-weight: $semi_bold;
     line-height: 56rem;
   }
 }
