@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/016f8587a2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Experimentos</title>
+  </head>
+  <body>
+    <div id="mask" class="mask">
+      <header class="header" id="anchor_header">
+        <nav class="header__nav">
+          <a href="https://adalab.es" target="_blank"
+            ><i class="fa-solid fa-bars header__nav--hamburguer"></i
+          ></a>
+
+          <ul class="header__nav--menu">
+            <li><a class="text_header_links" href="#">Productos</a></li>
+            <li><a class="text_header_links" href="#">Colecciones</a></li>
+            <li><a class="text_header_links" href="#">Tienda</a></li>
+            <li><a class="text_header_links" href="#">Inicio</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="builder">
+          <!-- LOGO -->
+          <a class="builder__logo" href="./index.html#header">
+            <img
+              class="logo"
+              src="./assets/images/logo.png"
+              alt="Logo de Open Spaces"
+              title="Ir al inicio"
+          /></a>
+          <!-- END OF LOGO -->
+
+          <div class="implosion__container">
+            <div class="implosion__content" id="implosion_form">
+              <form
+                class="epic-form byebye"
+                action="https://formspree.io/f/mnqwzqpk"
+                method="post"
+              >
+                <label class="epic-form__label" for="name">Nombre</label>
+                <input
+                  class="epic-form__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Xena"
+                />
+                <label class="epic-form__label" for="lastname">Epíteto épico</label>
+                <input
+                  class="epic-form__input"
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Princesa Guerrera"
+                />
+                <label class="epic-form__label" for="sex">Sexo</label>
+                <input
+                  class="epic-form__input"
+                  type="text"
+                  name="sex"
+                  id="sex"
+                  placeholder="Es inadecuado preguntarlo"
+                  disabled
+                />
+                <label class="epic-form__label" for="gender">Género</label>
+                <input
+                  class="epic-form__input"
+                  type="text"
+                  name="gender"
+                  id="gender"
+                  placeholder="Es complicado e íntimo"
+                  disabled
+                />
+
+                <label class="epic-form__label" for="pronoun">Pronombres</label>
+                <label class="checkbox" for="pronoun-she">
+                  <input
+                    class="checkbox--decoration"
+                    id="pronoun-she"
+                    type="checkbox"
+                    value="ella"
+                    name="pronoun"
+                  />
+                  Ella
+                </label>
+
+                <label class="checkbox" for="pronoun-they">
+                  <input
+                    class="checkbox--decoration"
+                    id="pronoun-they"
+                    type="checkbox"
+                    value="elle"
+                    name="pronoun"
+                  />
+                  Elle
+                </label>
+
+                <label class="checkbox checkbox" for="pronoun-he">
+                  <input
+                    class="checkbox--decoration"
+                    id="pronoun-he"
+                    type="checkbox"
+                    value="el"
+                    name="pronoun"
+                  />
+                  Él
+                </label>
+
+                <label class="checkbox checkbox" for="pronoun-other">
+                  <input
+                    class="checkbox--decoration"
+                    id="pronoun-other"
+                    type="checkbox"
+                    value="otro"
+                    name="pronoun"
+                  />
+                  Otro
+                </label>
+
+                <label class="checkbox checkbox-last" for="pronoun-none">
+                  <input
+                    class="checkbox--decoration"
+                    id="pronoun-none"
+                    type="checkbox"
+                    value="el"
+                    name="pronoun"
+                  />
+                  Prefiero no decirlo
+                </label>
+
+                <label class="epic-form__label" for="email">Email</label>
+                <input
+                  class="epic-form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="xena@warriorprincess.epic"
+                />
+
+                <label class="epic-form__label" for="message">Tu mensaje ;)</label>
+                <textarea
+                  class="epic-form__textarea"
+                  name="message"
+                  id="message"
+                  placeholder="Ella era Xena, una temible princesa forjada en el calor de la batalla. Poderosa, pasional, peligrosa. Su valentía cambió el mundo, Xena la Princesa Guerrera"
+                ></textarea>
+
+                <!-- BUTTONS -->
+                <div class="button__content">
+                  <input
+                    class="button button--normal button-present"
+                    name="button"
+                    type="submit"
+                    value="Enviar"
+                  />
+
+                  <div
+                    class="button button--normal button-past"
+                    onclick="implosion_form.classList.toggle('animated')"
+                  >
+                    Enviar al pasado
+                  </div>
+
+                  <div
+                    onclick="mask.classList.toggle('transparent')"
+                    class="button button--normal button-future"
+                  >
+                    Enviar al futuro
+                  </div>
+                </div>
+                <!-- END OF BUTTONS -->
+              </form>
+
+              <div class="gusaxo001"></div>
+            </div>
+          </div>
+
+          <!-- 
+          <button onclick="nombre_del_identificador.classList.toggle('animated')">
+            Botón ejecutor
+          </button> -->
+
+          <!-- <div class="implosion__container">
+            <div class="implosion__content" id="nombre_del_identificador">
+              <div onclick="nombre_del_identificador.classList.toggle('animated')">
+                Elemento ejecutor
+              </div>
+            </div>
+          </div> -->
+
+        </section>
+
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__list">
+            <h3 class="footer__list__title text_title_h3">Tienda</h3>
+            <ul class="footer__list__ul">
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Productos</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Cajoneras</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Para toda la casa</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Habitaciones</li></a
+              >
+            </ul>
+          </div>
+
+          <div class="footer__list">
+            <h3 class="footer__list__title text_title_h3">Nosotros</h3>
+            <ul class="footer__list__ul">
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph capitalize">Nuestra guía</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Nuestro diseño</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Nuestra historia</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Ayuda</li></a
+              >
+            </ul>
+          </div>
+
+          <div class="footer__list">
+            <h3 class="footer__list__title text_title_h3">Contacto</h3>
+            <ul class="footer__list__ul">
+              <a href="mailto:hola@adalab.es"
+                ><li class="text_paragraph">ayuda@openspaces.com</li></a
+              >
+              <a href="https://adalab.es" target="_blank"
+                ><li class="text_paragraph">Socios</li></a
+              >
+            </ul>
+            <div class="footer__some">
+              <a href="https://adalab.es" target="_blank"
+                ><i
+                  class="footer__some__icon fa-brands fa-linkedin-in"
+                  title="Ir a linkdIn"
+                ></i
+              ></a>
+              <a href="https://adalab.es" target="_blank"
+                ><i
+                  class="footer__some__icon fa-brands fa-instagram"
+                  title="Ir a Instagram"
+                ></i
+              ></a>
+              <a href="https://adalab.es"
+                ><i
+                  class="footer__some__icon fa-brands fa-twitter"
+                  title="Ir a Twitter"
+                ></i
+              ></a>
+              <a href="./experiments.html"
+                ><i
+                  class="footer__some__icon footer__some__icon--egg fa-solid fa-egg"
+                  title="¡Sorpresa!"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="footer__arrow" href="#anchor_header">
+          <i class="fa-solid fa-arrow-up" title="Volver arriba"></i>
+        </a>
+      </footer>
+
+    </div>
+  </body>
+</html>
