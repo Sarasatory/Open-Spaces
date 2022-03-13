@@ -64,44 +64,39 @@ body {
 .text_title_h2 {
   font-size: 24rem;
   font-weight: $semi_bold;
-  line-height: 38rem;
+  line-height: normal;
   @media (min-width: $break_point_tablet) {
     font-size: 24rem;
-    line-height: 38rem;
   }
   @media (min-width: $break_point_desktop) {
     font-size: 36rem;
-    line-height: 56rem;
   }
 }
 
 .text_title_h3 {
   font-size: 20rem;
   font-weight: $semi_bold;
-  line-height: 30rem;
+  line-height: normal;
   @media (min-width: $break_point_desktop) {
     font-size: 24rem;
-    line-height: 38rem;
   }
 }
 
 .text_paragraph {
   font-size: 14rem;
   font-weight: $regular;
-  line-height: 18rem;
+  line-height: normal;
   @media (min-width: $break_point_desktop) {
     font-size: 16rem;
-    line-height: 20rem;
   }
 }
 
 .text_paragraph_advantages {
   font-size: 14rem;
   font-weight: $regular;
-  line-height: 18rem;
+  line-height: normal;
   @media (min-width: $break_point_tablet) {
     font-size: 16rem;
-    line-height: 20rem;
   }
 }
 
@@ -109,7 +104,7 @@ body {
   @media (min-width: $break_point_desktop) {
     font-size: 16rem;
     font-weight: $regular;
-    line-height: 20rem;
+    line-height: normal;
   }
 }
 .text_header_links:hover {
@@ -119,9 +114,8 @@ body {
 .text_footer_links {
   font-size: 14rem;
   font-weight: $regular;
-  line-height: 18rem;
+  line-height: normal;
   @media (min-width: $break_point_desktop) {
     font-size: 16rem;
-    line-height: 20rem;
   }
 }

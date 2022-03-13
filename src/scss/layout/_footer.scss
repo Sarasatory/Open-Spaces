@@ -1,0 +1,94 @@
+.footer {
+  padding: 40rem 24rem;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  color: $col_medium_grey;
+  background-color: $col_dark_green;
+
+  &__container {
+    padding-left: 80rem;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 40rem;
+
+    @media (min-width: $break_point_tablet) {
+      padding: 40rem 24rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 40rem;
+      max-width: $max-width-tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      max-width: $max-width-desktop;
+    }
+  }
+
+  &__list {
+    &__title {
+      padding-bottom: 12rem;
+    }
+
+    &__ul {
+      padding-bottom: 20rem;
+      & li:hover {
+        color: $col_white;
+      }
+    }
+  }
+
+  &__some {
+    display: flex;
+    &__icon {
+      width: 24rem;
+      height: 24rem;
+      margin-right: 10rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: $col_white;
+
+      &:hover {
+        color: $col_dark_green_hover;
+      }
+      &--egg {
+        transition: ease 1s;
+        &:hover {
+          color: $col_orange;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    width: 24rem;
+    height: 24rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 16rem;
+    right: 28rem;
+
+    color: $col_white;
+
+    @media (min-width: $break_point_tablet) {
+      bottom: 100rem;
+      right: 10%;
+    }
+    @media (min-width: $break_point_desktop) {
+      bottom: 105rem;
+      right: 15%;
+    }
+    &:hover {
+      color: $col_dark_green_hover;
+    }
+  }
+}

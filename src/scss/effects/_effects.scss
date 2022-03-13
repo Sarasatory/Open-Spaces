@@ -22,16 +22,16 @@
   color: #fff;
 }
 
-// .internal-box {
-//   width: 90%;
-//   height: 90%;
-//   background-color: bisque;
-// }
-
 .animated {
-  animation: nombre-animacion 5s 1;
+  animation-name: implosion;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-@keyframes nombre-animacion {
+
+@keyframes implosion {
   0% {
     background-color: red;
     // width: 300rem;
