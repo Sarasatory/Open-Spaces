@@ -1,0 +1,51 @@
+.implosion__container {
+  width: 700rem;
+  height: 500rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #000;
+  cursor: pointer;
+}
+.implosion__content {
+  width: 300rem;
+  height: 100rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: red;
+  overflow: hidden;
+  color: #fff;
+}
+
+.animated {
+  animation-name: implosion;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes implosion {
+  0% {
+    background-color: red;
+    // width: 300rem;
+    display: none;
+  }
+
+  90% {
+    background-color: rgb(34, 0, 255);
+    height: 140rem;
+    display: none;
+  }
+  100% {
+    background-color: rgb(34, 0, 255);
+    width: 0;
+    display: none;
+  }
+}
