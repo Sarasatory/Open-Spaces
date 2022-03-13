@@ -4,7 +4,6 @@
 
   height: calc(96rem + 20rem);
   padding: 20rem 32rem 0 32rem;
-  margin-bottom: calc(-96rem - 20rem);
 
   display: flex;
   justify-content: center;
@@ -45,14 +44,5 @@
         padding: 0 15rem;
       }
     }
-  }
-
-  &__logo {
-    width: 214rem;
-    height: 96rem;
-
-    position: absolute;
-    top: 20rem;
-    left: calc(50vw - 107rem);
   }
 }

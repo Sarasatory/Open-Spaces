@@ -1,51 +1,206 @@
 .implosion__container {
-  width: 700rem;
-  height: 500rem;
+  width: 100%;
+  margin: 40rem 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 2px solid #000;
   cursor: pointer;
 }
+
 .implosion__content {
-  width: 300rem;
-  height: 100rem;
+  width: 100%;
+  height: 810rem;
+  padding: 12rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: red;
-  overflow: hidden;
   color: #fff;
+  @media (min-width: $break_point_tablet) {
+    width: 80%;
+    // max-width: $max-width-tablet;
+    margin: 40rem 0;
+  }
+  @media (min-width: $break_point_desktop) {
+    width: 80%;
+    // max-width: $max-width-desktop;
+    margin: 40rem 0;
+  }
 }
 
 .animated {
   animation-name: implosion;
-  animation-duration: 1s;
+  animation-duration: 1000s;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 @keyframes implosion {
   0% {
-    background-color: red;
-    // width: 300rem;
-    display: none;
+    width: 90%;
+    overflow: hidden;
   }
 
-  90% {
-    background-color: rgb(34, 0, 255);
-    height: 140rem;
-    display: none;
+  0.08% {
+    width: 1%;
+    height: 800rem;
+    overflow: hidden;
+    background-color: transparent;
   }
-  100% {
-    background-color: rgb(34, 0, 255);
+  0.09% {
+    width: 1%;
+    height: 200rem;
+    overflow: hidden;
+    background-color: aqua;
+  }
+  0.1% {
+    width: 10rem;
+    height: 10rem;
+    display: none;
+    overflow: hidden;
+
+    background-color: transparent;
+    background-image: url(../images/hole.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  99% {
     width: 0;
     display: none;
+    overflow: hidden;
+  }
+  100% {
+    display: none;
+    overflow: hidden;
+  }
+}
+.mask {
+  background-color: $col_light_grey;
+}
+
+.transparent {
+  animation-name: transparentbg;
+  animation-duration: 500s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transparentbg {
+  0% {
+    opacity: 1;
+    display: none;
+  }
+  0.08% {
+    opacity: 0.2;
+  }
+  0.1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.gusaxo001 {
+  width: 350rem;
+  height: 350rem;
+
+  position: absolute;
+  top: 300rem;
+  z-index: 0;
+
+  background-image: url(../images/gusaxo001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.epic-form {
+  overflow: hidden;
+  width: 90%;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  color: $col_dark_green;
+  background-color: $col_light_grey;
+
+  &__label {
+    width: 100%;
+    padding-bottom: 8rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 4rem 8rem;
+    margin-bottom: 20rem;
+
+    border: none;
+    border-bottom: 1px solid $col_medium_grey;
+    background-color: transparent;
+  }
+
+  &__input:focus,
+  &__input:focus-visible {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $col_dark_green;
+    box-shadow: none;
+  }
+
+  & .checkbox {
+    padding-bottom: 4rem;
+    &--decoration {
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+  & .checkbox-last {
+    padding-bottom: 20rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 120rem;
+    padding: 4rem 8rem;
+    margin-bottom: 20rem;
+  }
+
+  .button__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $break_point_tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20rem;
+    }
+    @media (min-width: $break_point_desktop) {
+    }
+    & .button-present,
+    .button-past,
+    .button-future {
+      width: 100%;
+      margin-bottom: 12rem;
+      text-align: center;
+    }
+    & .button-past,
+    .button-future {
+      background-color: rgb(196, 12, 12);
+    }
+    & .button-past:hover,
+    .button-future:hover {
+      background-color: rgb(230, 145, 41);
+    }
   }
 }

@@ -1,0 +1,28 @@
+body {
+  background-color: #f4f5f6;
+  background-image: url(../images/bgfuture.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.builder {
+  min-height: 100vh;
+  padding: calc(96rem + 20rem) 0 40rem 0;
+  margin-top: calc(-96rem - 20rem);
+
+  background-color: $col_light_grey;
+
+  @media (min-width: $break_point_tablet) {
+    padding: calc(96rem + 20rem) 48rem 40rem 48rem;
+  }
+
+  &__logo {
+    width: 214rem;
+    height: 96rem;
+
+    position: absolute;
+    top: 20rem;
+    left: calc(50vw - 107rem);
+  }
+}

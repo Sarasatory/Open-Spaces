@@ -1,6 +1,7 @@
 .hero {
   height: 100vh;
   padding: 0 24rem;
+  margin-top: calc(-96rem - 20rem);
 
   display: flex;
   justify-content: center;
@@ -35,5 +36,14 @@
         margin: 400rem 0 12rem 0;
       }
     }
+  }
+
+  &__logo {
+    width: 214rem;
+    height: 96rem;
+
+    position: absolute;
+    top: 20rem;
+    left: calc(50vw - 107rem);
   }
 }

@@ -1,9 +1,157 @@
 <div class="implosion__container">
-  <div id="identificador" class="implosion__content">
-    <p>Palabra</p>
+  <div class="implosion__content" id="implosion_form">
+    <form
+      class="epic-form byebye"
+      action="https://formspree.io/f/mnqwzqpk"
+      method="post"
+    >
+      <label class="epic-form__label" for="name">Nombre</label>
+      <input
+        class="epic-form__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Xena"
+      />
+      <label class="epic-form__label" for="lastname">Epíteto épico</label>
+      <input
+        class="epic-form__input"
+        type="text"
+        name="lastname"
+        id="lastname"
+        placeholder="Princesa Guerrera"
+      />
+      <label class="epic-form__label" for="sex">Sexo</label>
+      <input
+        class="epic-form__input"
+        type="text"
+        name="sex"
+        id="sex"
+        placeholder="Es inadecuado preguntarlo"
+        disabled
+      />
+      <label class="epic-form__label" for="gender">Género</label>
+      <input
+        class="epic-form__input"
+        type="text"
+        name="gender"
+        id="gender"
+        placeholder="Es complicado e íntimo"
+        disabled
+      />
+
+      <label class="epic-form__label" for="pronoun">Pronombres</label>
+      <label class="checkbox" for="pronoun-she">
+        <input
+          class="checkbox--decoration"
+          id="pronoun-she"
+          type="checkbox"
+          value="ella"
+          name="pronoun"
+        />
+        Ella
+      </label>
+
+      <label class="checkbox" for="pronoun-they">
+        <input
+          class="checkbox--decoration"
+          id="pronoun-they"
+          type="checkbox"
+          value="elle"
+          name="pronoun"
+        />
+        Elle
+      </label>
+
+      <label class="checkbox checkbox" for="pronoun-he">
+        <input
+          class="checkbox--decoration"
+          id="pronoun-he"
+          type="checkbox"
+          value="el"
+          name="pronoun"
+        />
+        Él
+      </label>
+
+      <label class="checkbox checkbox" for="pronoun-other">
+        <input
+          class="checkbox--decoration"
+          id="pronoun-other"
+          type="checkbox"
+          value="otro"
+          name="pronoun"
+        />
+        Otro
+      </label>
+
+      <label class="checkbox checkbox-last" for="pronoun-none">
+        <input
+          class="checkbox--decoration"
+          id="pronoun-none"
+          type="checkbox"
+          value="el"
+          name="pronoun"
+        />
+        Prefiero no decirlo
+      </label>
+
+      <label class="epic-form__label" for="email">Email</label>
+      <input
+        class="epic-form__input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="xena@warriorprincess.epic"
+      />
+
+      <label class="epic-form__label" for="message">Tu mensaje ;)</label>
+      <textarea
+        class="epic-form__textarea"
+        name="message"
+        id="message"
+        placeholder="Ella era Xena, una temible princesa forjada en el calor de la batalla. Poderosa, pasional, peligrosa. Su valentía cambió el mundo, Xena la Princesa Guerrera"
+      ></textarea>
+
+      <!-- BUTTONS -->
+      <div class="button__content">
+        <input
+          class="button button--normal button-present"
+          name="button"
+          type="submit"
+          value="Enviar"
+        />
+
+        <div
+          class="button button--normal button-past"
+          onclick="implosion_form.classList.toggle('animated')"
+        >
+          Enviar al pasado
+        </div>
+
+        <div
+          onclick="mask.classList.toggle('transparent')"
+          class="button button--normal button-future"
+        >
+          Enviar al futuro
+        </div>
+      </div>
+      <!-- END OF BUTTONS -->
+    </form>
+
+    <div class="gusaxo001"></div>
   </div>
 </div>
 
-<button onclick="identificador.classList.toggle('animated')">
+<!-- 
+<button onclick="nombre_del_identificador.classList.toggle('animated')">
   Botón ejecutor
-</button>
+</button> -->
+
+<!-- <div class="implosion__container">
+  <div class="implosion__content" id="nombre_del_identificador">
+    <div onclick="nombre_del_identificador.classList.toggle('animated')">
+      Elemento ejecutor
+    </div>
+  </div>
+</div> -->
