@@ -1,8 +1,9 @@
-@import "core/variables";
 @import "core/normalize";
+@import "core/variables";
 @import "core/reset";
 @import "core/global";
 @import "components/components";
+@import "effects/effects";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/advantages";
@@ -10,4 +11,3 @@
 @import "layout/buy";
 @import "layout/footer";
 @import "layout/builder";
-@import "effects/effects";

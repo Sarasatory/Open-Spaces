@@ -33,10 +33,27 @@
           ></a>
 
           <ul class="header__nav--menu">
-            <li><a class="text_header_links" href="#">Productos</a></li>
-            <li><a class="text_header_links" href="#">Colecciones</a></li>
-            <li><a class="text_header_links" href="#">Tienda</a></li>
-            <li><a class="text_header_links" href="#">Inicio</a></li>
+            <li>
+              <a class="text_header_links" href="#" title="Conoce nuestros productos"
+                >Productos</a
+              >
+            </li>
+            <li>
+              <a
+                class="text_header_links"
+                href="#"
+                title="Disfruta de nuestras colecciones"
+                >Colecciones</a
+              >
+            </li>
+            <li>
+              <a class="text_header_links" href="#" title="Visita nuestra tienda"
+                >Tienda</a
+              >
+            </li>
+            <li>
+              <a class="text_header_links" href="#" title="Vuelve al incio">Inicio</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -53,8 +70,8 @@
           /></a>
           <!-- END OF LOGO -->
 
-          <div class="implosion__container">
-            <div class="implosion__content" id="implosion_form">
+          <div class="effects__container">
+            <div class="effects__content" id="effects_form">
               <form
                 class="epic-form byebye"
                 action="https://formspree.io/f/mnqwzqpk"
@@ -178,15 +195,15 @@
                   />
 
                   <div
-                    class="button button--normal button-past"
-                    onclick="implosion_form.classList.toggle('animated')"
+                    class="button button--red button-past"
+                    onclick="effects_form.classList.toggle('animated')"
                   >
                     Enviar al pasado
                   </div>
 
                   <div
                     onclick="mask.classList.toggle('transparent')"
-                    class="button button--normal button-future"
+                    class="button button--red button-future"
                   >
                     Enviar al futuro
                   </div>
@@ -197,19 +214,6 @@
               <div class="gusaxo001"></div>
             </div>
           </div>
-
-          <!-- 
-          <button onclick="nombre_del_identificador.classList.toggle('animated')">
-            Botón ejecutor
-          </button> -->
-
-          <!-- <div class="implosion__container">
-            <div class="implosion__content" id="nombre_del_identificador">
-              <div onclick="nombre_del_identificador.classList.toggle('animated')">
-                Elemento ejecutor
-              </div>
-            </div>
-          </div> -->
 
         </section>
 
@@ -262,6 +266,7 @@
                 ><li class="text_paragraph">Socios</li></a
               >
             </ul>
+
             <div class="footer__some">
               <a href="https://adalab.es" target="_blank"
                 ><i
@@ -290,7 +295,7 @@
             </div>
           </div>
         </div>
-        <a class="footer__arrow" href="#anchor_header">
+        <a class="footer__arrow" href="./index.html#anchor_header">
           <i class="fa-solid fa-arrow-up" title="Volver arriba"></i>
         </a>
       </footer>

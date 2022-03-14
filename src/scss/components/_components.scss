@@ -15,6 +15,8 @@
   cursor: pointer;
 }
 
+//
+
 .button--normal {
   color: $col_white;
   text-transform: capitalize;
@@ -22,6 +24,23 @@
 }
 .button--normal:hover {
   background-color: $col_dark_green_hover;
+
+  animation-name: fading_normal;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fading_normal {
+  0% {
+    background-color: $col_dark_green;
+  }
+
+  100% {
+    background-color: $col_dark_green_hover;
+  }
 }
 
 .button--ghost {
@@ -31,4 +50,47 @@
 }
 .button--ghost:hover {
   background-color: $col_orange_hover;
+
+  animation-name: fading_ghost;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fading_ghost {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: $col_orange_hover;
+  }
+}
+
+.button--red {
+  color: $col_white;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.button--red:hover {
+  background-color: $col_orange_hover;
+
+  animation-name: fading_red;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fading_red {
+  0% {
+    background-color: $col_red_button;
+  }
+
+  100% {
+    background-color: $col_red_button_hover;
+  }
 }
