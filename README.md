@@ -23,9 +23,9 @@ Aunque el enunciado nos fue entregado el jueves por la tarde, ese día tan solo 
 #### Viernes (mañana)
 
 - Revisión y repaso del temario menos asentado, a fin de reforzar mis puntos débiles:
-  - - Ramas de GitHub.
-  - - Posicionamientos.
-  - - Animaciones y transiciones.
+  - Ramas de GitHub.
+  - Posicionamientos.
+  - Animaciones y transiciones.
 
 #### Viernes (tarde)
 
