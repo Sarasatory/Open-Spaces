@@ -64,6 +64,16 @@ Aunque el enunciado nos fue entregado el jueves por la tarde, ese día tan solo 
 - Zeplin
 - Sketch
 
+### Notas
+
+Cuando me puse a analizar el ejercicio me di cuenta de que había algunas inconsistencias en el diseño que se nos presentaba a través de zeplin, sobre todo en cuanto a las distancias que separaban los elementos y los tamaños de algunos de ellos.
+
+Mi intención entonces fue crear una página, que se ajustara menos a las especificaciones dadas, pero que fuera más funcional y estéticamente más atractiva, con distancias uniformes entre elementos similares, mismas distancias hasta los margenes, elementos centrados en la horizontal, etc. En definitiva mantener una cierta coherecia en el diseño.
+
+Lo consulte con una persona del profesorado, y tras darme el visto bueno, es así como he desarrollado la página, por lo que habrá diferencias respecto a lo pautado en Zeplin, pero son diferencias valoradas de forma consciente, y decididas en función de un objetivo.
+
+Con este mismo fin, he añadido cierta fluidez a algunos elementos, de modo que se muestren correctamente en todos los tamaños de pantalla, y en ningún caso lleguen a colapsar o a rozar los márgenes.
+
 ## Extra
 
 He decidido crear una página extra "Experiments", en la que poder jugar y practicar con elementos y efectos que me parecen interesantes e importantes, pero que no estaban en el ejercicio original.
@@ -72,3 +82,12 @@ Se accede a ella mediante el icono del huevo que hay en el footer, al lado de lo
 La idea no ha sido en ningún momento conseguir un resultado excelente, ni visualmente ni en cuanto al comportamiento de la página, y tampoco tener un código limpio y bien estructurado (aunque con más tiempo sí habría sido así), sino tener un espacio de experimentación en el que poder jugar con elementos que me eran menos conocidos, como los formularios, y en especial las animaciones y transiciones.
 
 He estado muy tentada de meter alguna línea de js para conseguir ciertos efectos, sobre todo modificar un elemento (el header) en función del scroll de la página. Sin embargo he decidido no hacerlo dado que no es algo que hayamos estudiado aún. Desafortunadamente con Pure CSS no parece que sea sencillo de conseguir, al menos de momento.
+
+## Conclusiones
+
+Me he enfrentado algunos retos que no me esperaba. En especial al de quedarme en blanco ante algo que sé hacer (aún con mucho margen de mejora) por la sencilla razón de que fuera una prueba técnica. También a la toma de decisiones ante elementos que no estaban del todo definidos o comportamientos que no habían sido especificados (breakpoints, anchos máximo, flexibilidad de ciertos elementos, etc.)
+
+Y finalmente, espero que la experiencia con el experimento del huevo de pascua resulte divertida y agradable. A mí me ha servido para aprender, de modo que estoy satisfecha.
+¡Saludos, Gusaxo!
+
+Satory ^^
