@@ -14,7 +14,6 @@ El objetivo de este ejercicio es demostrar que se han adquirido los conocimiento
 - Uso de las tecnologías y técnicas aprendidas durante el curso.
 - Uso de GitHub, como servidor de control de versiones con distintas ramas de desarrollo.
 - Uso de GitHub Pages como servidor donde alojar y publicar nuestra página web.
--
 
 ### Duración
 
@@ -24,9 +23,9 @@ Aunque el enunciado nos fue entregado el jueves por la tarde, ese día tan solo 
 #### Viernes (mañana)
 
 - Revisión y repaso del temario menos asentado, a fin de reforzar mis puntos débiles:
-  -- Ramas de GitHub.
-  -- Posicionamientos.
-  -- Animaciones y transiciones.
+  - - Ramas de GitHub.
+  - - Posicionamientos.
+  - - Animaciones y transiciones.
 
 #### Viernes (tarde)
 
