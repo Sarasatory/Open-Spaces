@@ -88,6 +88,7 @@ He estado muy tentada de meter alguna línea de js para conseguir ciertos efecto
 Me he enfrentado algunos retos que no me esperaba. En especial al de quedarme en blanco ante algo que sé hacer (aún con mucho margen de mejora) por la sencilla razón de que fuera una prueba técnica. También a la toma de decisiones ante elementos que no estaban del todo definidos o comportamientos que no habían sido especificados (breakpoints, anchos máximo, flexibilidad de ciertos elementos, etc.)
 
 Y finalmente, espero que la experiencia con el experimento del huevo de pascua resulte divertida y agradable. A mí me ha servido para aprender, de modo que estoy satisfecha.
+
 ¡Saludos, Gusaxo!
 
 Satory ^^
