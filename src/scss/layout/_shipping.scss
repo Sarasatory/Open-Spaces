@@ -14,13 +14,23 @@
     height: 120rem;
 
     margin-bottom: 12rem;
+    order: 1;
   }
 
   &__title {
     margin-bottom: 12rem;
+    order: 3;
   }
 
   &__paragraph {
-    margin-bottom: 24rem;
+    order: 2;
+    margin-bottom: 44rem;
+    @media (min-width: $break_point_tablet) {
+      margin-bottom: 24rem;
+    }
+  }
+
+  & .button {
+    order: 3;
   }
 }

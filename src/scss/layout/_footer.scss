@@ -83,7 +83,10 @@
 
     color: $col_white;
 
+    display: none;
+
     @media (min-width: $break_point_tablet) {
+      display: flex;
       bottom: 100rem;
       right: 10%;
     }
